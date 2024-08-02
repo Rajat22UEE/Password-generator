@@ -34,8 +34,8 @@ function App() {
   }, [length, numberAllowed, charAllowed, passwordGenerator]);
 
   return (
-    <div className="app-container">
-      <div className="main-body w-full max-w-lg mx-auto shadow-2xl rounded-lg px-8 py-10 my-8 text-white">
+    <div className="app-container bg-cyan-500">
+      <div className="main-body bg-cyan-500 w-full max-w-lg mx-auto shadow-2xl rounded-lg px-8 py-10 my-8 text-white">
         <h1 className="text-center text-3xl font-bold mb-6">Password Generator</h1>
         <div className="flex shadow rounded-lg overflow-hidden mb-6 bg-white text-gray-800">
           <input
@@ -108,21 +108,10 @@ function App() {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: linear-gradient(270deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00f0);
           background-size: 1600% 1600%;
-          animation: gradient-animation 12s ease infinite;
+          
         }
-
-        .main-body {
-          background-image: linear-gradient(to right top, #ff0000, #ef6200, #d88e00, #bbb000, #99cc00, #6fd453, #42da84, #00dcad, #00c7df, #00abff, #0080ff, #7a00ff) ; 
-        }
-
-        @keyframes gradient-animation {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
+         `}</style>
     </div>
   );
 }
